@@ -17,7 +17,8 @@
     "next": "latest",
     "next-auth": "^4.23.1",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "react-icons": "^4.11.0"
   },
   "devDependencies": {
     "@grafbase/sdk": "^0.6.3",

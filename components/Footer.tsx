@@ -1,6 +1,9 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { footerLinks } from "@/constants";
+
+import logo from "/public/logo.png";
 
 type ColumnProps = {
   title: string;
@@ -25,7 +28,8 @@ const Footer = () => {
     <footer className="flexStart footer">
       <div className="flex flex-col gap-12 w-full">
         <div className="flex items-start flex-col">
-          <h2 className="font-mono tracking-tight text-xl">Showcase</h2>
+          <Image src={logo} width={130} height={60} alt="logo" />
+          {/* <h2 className="font-mono tracking-tight text-xl">Showcase</h2> */}
           <p className="text-start text-sm font-normal mt-5 max-w-xs">
             Share your best projects with fellow devs. Help the community grow.
           </p>
@@ -56,7 +60,7 @@ const Footer = () => {
       </div>
 
       <div className="flexBetween footer_copyright">
-          <p className="text-neutral-400">Developed by Ovee @2023</p>
+        <p className="text-neutral-400">Developed by Ovee @2023</p>
       </div>
     </footer>
   );
